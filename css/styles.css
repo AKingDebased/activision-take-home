@@ -16,6 +16,7 @@ body {
     justify-content: center;
     max-width: 680px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .copy {
@@ -54,6 +55,29 @@ body {
 .button:active {
 	position: relative;
 	top: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url('../img/hero_img_mobile_01.jpg');
+    }
+
+    .main-content {
+        position: relative;
+        top: 340px;
+        height: auto;
+    }
+
+    .copy {
+        font-size: 24px;
+    }
+
+    .button {
+        width: 165px;
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+    }
 }
 
         
