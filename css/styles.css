@@ -8,6 +8,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.responsive-wrapper {
+    height: 100vh;
+}
+
 .main-content {
     align-items: center;
     height: 100vh;
@@ -57,15 +61,14 @@ body {
 	top: 1px;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     body {
         background-image: url('../img/hero_img_mobile_01.jpg');
     }
 
     .main-content {
-        position: relative;
-        top: 340px;
-        height: auto;
+        height: 86vh;
+        justify-content: flex-end;
     }
 
     .copy {
